@@ -94,7 +94,7 @@ footer span {
 }
     header {
       background: linear-gradient(90deg, #007BFF, #00c6ff);
-      padding: 10px 0;
+      padding: 5px 0;
       position: fixed;
       width: 100%;
       top: 0;
@@ -114,7 +114,7 @@ footer span {
     .logo a {
       color: white;
       text-decoration: none;
-      font-size: 28px;
+      font-size: 20px;
       font-weight: bold;
     }
 
@@ -146,9 +146,9 @@ footer span {
     }
 
     .menu-toggle .bar {
-      width: 25px;
-      height: 3px;
-      margin: 4px;
+      width: 20px;
+      height: 2px;
+      margin: 2px;
       background-color: #2c3e50;
       transition: 0.3s;
     }
@@ -160,7 +160,7 @@ footer span {
 
       .nav-links {
         position: absolute;
-        top: 60px;
+        top: 35px;
         left: 0;
         width: 100%;
         background: linear-gradient(90deg, #007BFF, #00c6ff);
@@ -181,7 +181,7 @@ footer span {
       }
     }
 
-main {
+ main {
       padding-top: 80px;
     }
     
@@ -254,50 +254,38 @@ main {
       transform: scale(0.95);
     }
 
-    .social-links-box {
-      margin-top: 40px;
-      border-top: 2px solid #007BFF;
-      padding-top: 20px;
-      border: 3px solid #007BFF; /* Blue border around the social media section */
-      border-radius: 12px;
-      background-color: #fff;
-      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
-      padding-bottom: 30px; /* Added padding at the bottom to prevent logos being too close to the edge */
-    }
-
-    .social-links {
-      margin-top: 30px;
+    .social-glass {
       display: flex;
       justify-content: center;
       gap: 20px;
     }
 
-    .social-link {
-      width: 40px;
-      height: 40px;
+    .icon-glass {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
       border-radius: 50%;
-      border: 3px solid #007BFF; /* Blue border around the logos */
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: border-color 0.3s ease;
+      text-decoration: none;
+      font-size: 22px;
+      color: #fff;
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
     }
 
-    .social-link:hover {
-      border-color: #0056b3; /* Darker blue on hover */
+    .icon-glass:hover {
+      transform: scale(1.1);
+      background: rgba(255, 255, 255, 0.2);
     }
 
-    .social-link a {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-
-    .social-link img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-    }
+    .tiktok i { color: #000; }
+    .youtube i { color: #FF0000; }
+    .instagram i { color: #d62976; }
     .product-container {
       display: flex;
       flex-wrap: wrap;
@@ -564,23 +552,11 @@ section {
       </div>
       <div class="contact-box">
         <h2>Follow Us</h2>
-        <div class="social-links">
-          <div class="social-link">
-            <a href="https://www.tiktok.com/@babasbotz?_t=ZS-8voK26RveS1&_r=1" target="_blank">
-              <img src="https://static.vecteezy.com/system/resources/previews/016/716/450/non_2x/tiktok-icon-free-png.png" alt="TikTok" width="40" height="40"/>
-            </a>
-          </div>
-          <div class="social-link">
-            <a href="https://www.instagram.com/babasszzz" target="_blank">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40" height="40"/>
-            </a>
-          </div>
-          <div class="social-link">
-            <a href="https://www.youtube.com/@Babassszz" target="_blank">
-              <img src="https://images.icon-icons.com/1211/PNG/512/1491580651-yumminkysocialmedia28_83061.png" alt="YouTube" width="40" height="40"/>
-            </a>
-          </div>
-        </div>
+  <div class="social-glass">
+    <a href="https://www.tiktok.com/@babasbotz?_t=ZS-8voK26RveS1&_r=1" class="icon-glass tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.youtube.com/@Babassszz" class="icon-glass youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/babasszzz" class="icon-glass instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
       </div>
     </section>
     <hr style=" border: 0;
